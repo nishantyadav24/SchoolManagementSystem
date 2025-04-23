@@ -1,4 +1,3 @@
-// routes/schoolRoutes.js
 const express = require('express');
 const router = express.Router();
 const controller = require('../Controllers/schoolController');
@@ -10,5 +9,4 @@ const {
 router.post('/addSchool', validateAddSchool, controller.addSchool);
 router.get('/listSchools', validateListSchools, controller.listSchools);
 
-module.exports = router;
-  
+module.exports = router;  
